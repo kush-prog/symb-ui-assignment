@@ -5,15 +5,16 @@ import BackgroundShapes from "./BackgroundShapes";
 
 export default function ToolsSection() {
   return (
-    <section className="relative bg-[#f5f7fb] py-14 md:py-18 overflow-hidden">
-      
+    <section className="relative bg-[#f5f7fb] py-20 md:py-28 overflow-hidden">
+
       <BackgroundShapes />
 
-      <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-16 text-center relative z-10">
         <ToolsHeader />
         <ToolsPreview />
         <ToolsIcons />
       </div>
+
     </section>
   );
 }

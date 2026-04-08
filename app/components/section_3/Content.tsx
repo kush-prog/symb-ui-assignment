@@ -2,7 +2,7 @@ export default function Content() {
   return (
     <div className="space-y-6 text-center md:text-left">
 
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0B1B33] leading-tight">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
         An{" "}
         <span className="relative inline-block">
           all-in-one

@@ -1,6 +1,6 @@
 export default function ToolsHeader() {
   return (
-    <div className="mb-16 md:mb-20">
+    <div className="mb-12 md:mb-16">
       <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
         All the <span className="relative inline-block">
           tools

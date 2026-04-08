@@ -1,17 +1,22 @@
 import Image from "next/image";
 
-export default function Preview() {
+export default function PreviewCard() {
   return (
-    <div className="relative flex justify-center md:justify-end">
-
+    <div className="relative z-10 mb-6 md:mb-0">
       <Image
         src="/section_3/Video.svg"
         alt="app preview"
-        width={500}
-        height={300}
-        className="w-[90%] md:w-[600px] lg:w-[700px] object-contain drop-shadow-2xl"
+        width={600}
+        height={400}
+        className="
+          w-[260px] 
+          sm:w-[320px] 
+          md:w-[400px] 
+          lg:w-[480px] 
+          object-contain 
+          drop-shadow-2xl
+        "
       />
-
     </div>
   );
 }

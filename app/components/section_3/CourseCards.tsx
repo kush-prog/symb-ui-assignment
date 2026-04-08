@@ -1,43 +1,49 @@
 export default function CourseCards() {
   return (
-    <div className="absolute bottom-[-85px] left-1/2 -translate-x-1/2 flex gap-4 z-20">
+    <div
+      className="
+        flex 
+        flex-col sm:flex-row 
+        gap-4 
+        mt-6 md:mt-0
+        md:absolute 
+        md:bottom-[-50px] 
+        md:left-1/2 
+        md:-translate-x-1/2
+        z-20
+      "
+    >
+      {[
+        { tag: "Featured", color: "purple", text: "The map of mathematics" },
+        { tag: "Popular", color: "blue", text: "Design for how people think" },
+        { tag: "New", color: "green", text: "International & commercial law" },
+      ].map((item, i) => (
+        <div
+          key={i}
+          className="
+            bg-white p-4 rounded-xl shadow 
+            w-full sm:w-[180px]
+          "
+        >
+          <span
+            className={`text-xs px-2 py-1 rounded 
+              ${item.color === "purple" && "bg-purple-100 text-purple-600"}
+              ${item.color === "blue" && "bg-blue-100 text-blue-600"}
+              ${item.color === "green" && "bg-green-100 text-green-600"}
+            `}
+          >
+            {item.tag}
+          </span>
 
-      <div className="bg-white p-4 rounded-xl shadow w-[160px]">
-        <span className="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">
-          Featured
-        </span>
-        <p className="text-sm mt-2 text-gray-900 font-medium">
-          The map of mathematics
-        </p>
-        <button className="mt-3 text-xs text-blue-600 border border-blue-600 px-2 py-1 rounded">
-          Take Lesson
-        </button>
-      </div>
+          <p className="text-sm mt-2 font-medium text-gray-900">
+            {item.text}
+          </p>
 
-      <div className="bg-white p-4 rounded-xl shadow w-[160px]">
-        <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">
-          Popular
-        </span>
-        <p className="text-sm mt-2 font-medium text-gray-900">
-          Design for how people think
-        </p>
-        <button className="mt-3 text-xs text-blue-600 border border-blue-600 px-2 py-1 rounded">
-          Take Lesson
-        </button>
-      </div>
-
-      <div className="bg-white p-4 rounded-xl shadow w-[160px]">
-        <span className="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">
-          New
-        </span>
-        <p className="text-sm mt-2 font-medium text-gray-900">
-          International & commercial law
-        </p>
-        <button className="mt-3 text-xs text-blue-600 border border-blue-600 px-2 py-1 rounded">
-          Take Lesson
-        </button>
-      </div>
-
+          <button className="mt-3 text-xs text-blue-600 border border-blue-600 px-2 py-1 rounded">
+            Take Lesson
+          </button>
+        </div>
+      ))}
     </div>
   );
 }

@@ -36,7 +36,7 @@ export default function HeroLeft() {
           href="#"
           className="flex items-center gap-2 text-[#0B1B33] font-medium text-base hover:text-orange-500 transition-colors"
         >
-          <span className="flex items-center justify-center w-9 h-9 rounded-full border-2 border-current flex-shrink-0">
+          <span className="flex items-center justify-center w-9 h-9 rounded-full border-2 border-current shrink-0">
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5 ml-0.5">
               <path d="M8 5v14l11-7z" />
             </svg>
@@ -46,21 +46,51 @@ export default function HeroLeft() {
       </div>
 
       <div className="pt-4 border-t border-gray-100">
-        <p className="text-gray-600 text-xs mb-4 text-center md:text-left uppercase tracking-widest font-semibold font-size-16px">
-          Trusted by leading companies
-        </p>
-        <div className="flex items-center gap-6 flex-wrap justify-center md:justify-start">
-          {companyLogos.map((logo, i) => (
-            <Image
-              key={i}
-              src={logo.src}
-              alt={logo.alt}
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="h-7 w-auto grayscale opacity-50 hover:opacity-80 transition-opacity"
-            />
-          ))}
+        <div className="
+          flex 
+          flex-col md:flex-row 
+          md:items-center 
+          md:justify-between 
+          gap-4
+        ">
+          <p className="
+          text-gray-600 
+            text-xs 
+            uppercase 
+            tracking-widest 
+            font-semibold
+            text-center md:text-left
+          ">
+            Trusted by leading companies
+          </p>
+
+          <div className="
+            flex 
+            items-center 
+            justify-center md:justify-end 
+            gap-5 
+            flex-wrap md:flex-nowrap
+          ">
+            {companyLogos.map((logo, i) => (
+              <Image
+                key={i}
+                src={logo.src}
+                alt={logo.alt}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="
+                  h-6 sm:h-7 
+                  w-auto 
+                  grayscale 
+                  opacity-50 
+                  hover:opacity-80 
+                  transition
+                "
+              />
+            ))}
+          </div>
+
         </div>
       </div>
 
