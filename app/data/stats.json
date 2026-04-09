@@ -1,0 +1,19 @@
+{
+  "stats": [
+    {
+      "icon": "/stats_img/heart-circle-sharp.svg",
+      "value": "195",
+      "label": "user countries"
+    },
+    {
+      "icon": "/stats_img/diamond.svg",
+      "value": "1M",
+      "label": "valued teachers"
+    },
+    {
+      "icon": "/stats_img/Icon.svg",
+      "value": "17M",
+      "label": "happy students"
+    }
+  ]
+}

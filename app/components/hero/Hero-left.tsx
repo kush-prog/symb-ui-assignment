@@ -1,35 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
-
-const companyLogos = [
-  { src: "/hero_page_img/Black and white Collection 3.png", alt: "Company 1" },
-  { src: "/hero_page_img/Black and white Collection 2.png", alt: "Company 2" },
-  { src: "/hero_page_img/Black and white Collection 11.png", alt: "Company 3" },
-  { src: "/hero_page_img/Black and white Collection 20.png", alt: "Company 4" },
-  { src: "/hero_page_img/Black and white Collection 2.png", alt: "Company 5" },
-];
+import heroData from "@/app/data/hero.json";
 
 export default function HeroLeft() {
+  const { heading, description, buttons, trustedByText, companyLogos } = heroData;
+
   return (
     <div className="space-y-6 text-center md:text-left">
 
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0B1B33] leading-tight">
-        Teach students <br />
+        {heading.line1} <br />
         <span className="relative inline-block isolate">
-          worldwide
+          {heading.highlight}
           <span className="absolute left-0 bottom-[6px] w-full h-[12px] bg-orange-400 rounded -z-10" />
         </span>
       </h1>
 
       <p className="text-gray-600 max-w-md mx-auto md:mx-0 text-sm sm:text-base leading-relaxed">
-        Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa
-        tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis
-        ultricies.
+        {description}
       </p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
         <button className="bg-orange-500 hover:bg-orange-600 transition-colors text-white px-8 py-3 rounded-lg font-semibold text-base w-full sm:w-auto">
-          Sign Up Now
+          {buttons.primary}
         </button>
 
         <Link
@@ -41,7 +34,7 @@ export default function HeroLeft() {
               <path d="M8 5v14l11-7z" />
             </svg>
           </span>
-          View Demo
+          {buttons.secondary}
         </Link>
       </div>
 
@@ -61,7 +54,7 @@ export default function HeroLeft() {
             font-semibold
             text-center md:text-left
           ">
-            Trusted by leading companies
+            {trustedByText}
           </p>
 
           <div className="

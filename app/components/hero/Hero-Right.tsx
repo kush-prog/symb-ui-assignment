@@ -1,12 +1,15 @@
 import Image from "next/image";
+import heroData from "@/app/data/hero.json";
 
 export default function HeroRight() {
+  const { heroImage } = heroData;
+
   return (
     <div className="flex justify-center md:justify-end">
 
       <Image
-        src="/hero_page_img/home.png" 
-        alt="hero illustration"
+        src={heroImage.src} 
+        alt={heroImage.alt}
         width={600}
         height={500}
         className="

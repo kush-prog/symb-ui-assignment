@@ -1,0 +1,15 @@
+{
+  "heading": "Join a world of learning",
+  "description": "Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Risus elit et fringilla habitant ut facilisi.",
+  "buttonText": "Sign Up Now",
+  "backgroundImages": {
+    "left": {
+      "src": "/section8/left-card.svg",
+      "alt": ""
+    },
+    "right": {
+      "src": "/section8/right-card.svg",
+      "alt": ""
+    }
+  }
+}

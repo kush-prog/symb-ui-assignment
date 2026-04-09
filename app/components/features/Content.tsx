@@ -1,17 +1,20 @@
 import Image from "next/image";
+import featuresData from "@/app/data/features.json";
 
 export default function Content() {
+  const { heading, highlightUnderline, description, ctaLink } = featuresData;
+
   return (
     <div className="space-y-6 text-center md:text-left">
 
       <h2 className="text-3xl md:text-4xl font-bold text-[#0B1B33] leading-tight">
-        All the cool{" "}
+        {heading.prefix}{" "}
         
         <span className="relative inline-block">
-          features
+          {heading.highlight}
 
           <Image
-            src="/features_img/Vector-14.svg"
+            src={highlightUnderline}
             alt=""
             width={140}
             height={15}
@@ -29,14 +32,11 @@ export default function Content() {
       </h2>
 
       <p className="text-gray-600 max-w-md mx-auto md:mx-0">
-        Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac.
-        In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque
-        quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non
-        viverra a, neque orci.
+        {description}
       </p>
 
-      <a href="#" className="text-blue-600 font-medium inline-block">
-        View all the features →
+      <a href={ctaLink.href} className="text-blue-600 font-medium inline-block">
+        {ctaLink.text}
       </a>
 
     </div>

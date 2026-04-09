@@ -1,0 +1,20 @@
+{
+  "logo": {
+    "src": "/Logo.png",
+    "alt": "uteach logo",
+    "width": 120,
+    "height": 40
+  },
+  "navLinks": [
+    { "label": "Products", "href": "#" },
+    { "label": "Solutions", "href": "#" },
+    { "label": "Pricing", "href": "#" }
+  ],
+  "dropdownLinks": [
+    { "label": "Resources", "href": "#" }
+  ],
+  "authButtons": {
+    "login": "Log In",
+    "signup": "Sign Up Now"
+  }
+}

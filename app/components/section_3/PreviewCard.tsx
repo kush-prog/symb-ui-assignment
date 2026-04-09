@@ -1,11 +1,14 @@
 import Image from "next/image";
+import section3Data from "@/app/data/section3.json";
 
 export default function PreviewCard() {
+  const { previewImage } = section3Data;
+
   return (
     <div className="relative z-10 mb-6 md:mb-0">
       <Image
-        src="/section_3/Video.svg"
-        alt="app preview"
+        src={previewImage.src}
+        alt={previewImage.alt}
         width={600}
         height={400}
         className="

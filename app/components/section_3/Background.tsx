@@ -1,10 +1,13 @@
 import Image from "next/image";
+import section3Data from "@/app/data/section3.json";
 
 export default function Background() {
+  const { backgroundBlob } = section3Data;
+
   return (
     <Image
-      src="/section_3/Blob.svg"
-      alt=""
+      src={backgroundBlob.src}
+      alt={backgroundBlob.alt}
       width={320}
       height={320}
       className="

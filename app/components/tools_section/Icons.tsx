@@ -1,18 +1,9 @@
 import Image from "next/image";
-
-const icons = [
-  "/section_2/bottom_icon_1.svg",
-  "/section_2/bottom_icon_2.svg",
-  "/section_2/bottom_icon_3.svg",
-  "/section_2/bottom_icon_4.svg",
-  "/section_2/bottom_icon_5.svg",
-  "/section_2/bottom_icon_6.svg",
-  "/section_2/bottom_icon_7.svg",
-  "/section_2/bottom_icon_8.svg",
-  "/section_2/bottom_icon_9.svg",
-];
+import toolsData from "@/app/data/tools.json";
 
 export default function ToolsIcons() {
+  const { icons } = toolsData;
+
   return (
     <div className="flex justify-center flex-wrap gap-4 md:gap-6 mt-6 md:mt-10">
 

@@ -1,0 +1,67 @@
+{
+  "logo": {
+    "src": "/Logo.png",
+    "alt": "uteach logo",
+    "width": 120,
+    "height": 40
+  },
+  "columns": [
+    {
+      "title": "Product",
+      "links": [
+        { "label": "Pricing", "href": "#" },
+        { "label": "Overview", "href": "#" },
+        { "label": "Browse", "href": "#" },
+        { "label": "Accessibility", "href": "#", "badge": "BETA" }
+      ]
+    },
+    {
+      "title": "Solutions",
+      "links": [
+        { "label": "Brainstorming", "href": "#" },
+        { "label": "Ideation", "href": "#" },
+        { "label": "Wireframing", "href": "#" },
+        { "label": "Research", "href": "#" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Help Center", "href": "#" },
+        { "label": "Blog", "href": "#" },
+        { "label": "Tutorials", "href": "#" },
+        { "label": "FAQs", "href": "#" }
+      ]
+    },
+    {
+      "title": "Support",
+      "links": [
+        { "label": "Contact Us", "href": "#" },
+        { "label": "Developers", "href": "#" },
+        { "label": "Documentation", "href": "#" },
+        { "label": "Integrations", "href": "#" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About", "href": "#" },
+        { "label": "Press", "href": "#" },
+        { "label": "Events", "href": "#" },
+        { "label": "Request Demo →", "href": "#" }
+      ]
+    }
+  ],
+  "bottom": {
+    "copyright": "uteach @ 2023. All rights reserved.",
+    "links": [
+      { "label": "Terms", "href": "#" },
+      { "label": "Privacy", "href": "#" },
+      { "label": "Contact", "href": "#" }
+    ],
+    "locale": {
+      "language": "EN",
+      "currency": "EUR"
+    }
+  }
+}

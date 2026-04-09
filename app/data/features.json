@@ -1,0 +1,27 @@
+{
+  "heading": {
+    "prefix": "All the cool",
+    "highlight": "features"
+  },
+  "highlightUnderline": "/features_img/Vector-14.svg",
+  "description": "Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.",
+  "ctaLink": {
+    "text": "View all the features →",
+    "href": "#"
+  },
+  "featureCard": {
+    "tag": "Popular",
+    "tagColor": "blue",
+    "title": "Design for how people think",
+    "description": "Aliquam ut euismod condimentum elementum ultrices volutpat sit non.",
+    "buttonText": "Take Lesson"
+  },
+  "visualImages": {
+    "blob": { "src": "/features_img/Blob.svg", "alt": "" },
+    "icons": { "src": "/features_img/Icons.svg", "alt": "" },
+    "picture2": { "src": "/features_img/Picture_2.svg", "alt": "" },
+    "picture": { "src": "/features_img/Picture.svg", "alt": "" },
+    "picture1": { "src": "/features_img/Picture_1.svg", "alt": "" },
+    "userThumb": { "src": "/features_img/User Thumb.svg", "alt": "" }
+  }
+}

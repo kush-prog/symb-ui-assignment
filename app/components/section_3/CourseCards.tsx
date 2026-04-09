@@ -1,4 +1,14 @@
+import section3Data from "@/app/data/section3.json";
+
 export default function CourseCards() {
+  const { courseCards } = section3Data;
+
+  const colorClasses: Record<string, string> = {
+    purple: "bg-purple-100 text-purple-600",
+    blue: "bg-blue-100 text-blue-600",
+    green: "bg-green-100 text-green-600",
+  };
+
   return (
     <div
       className="
@@ -14,11 +24,7 @@ export default function CourseCards() {
         w-full md:w-auto
       "
     >
-      {[
-        { tag: "Featured", color: "purple", text: "The map of mathematics" },
-        { tag: "Popular", color: "blue", text: "Design for how people think" },
-        { tag: "New", color: "green", text: "International & commercial law" },
-      ].map((item, i) => (
+      {courseCards.map((item, i) => (
         <div
           key={i}
           className="
@@ -28,11 +34,7 @@ export default function CourseCards() {
           "
         >
           <span
-            className={`text-xs px-2 py-1 rounded 
-              ${item.color === "purple" && "bg-purple-100 text-purple-600"}
-              ${item.color === "blue" && "bg-blue-100 text-blue-600"}
-              ${item.color === "green" && "bg-green-100 text-green-600"}
-            `}
+            className={`text-xs px-2 py-1 rounded ${colorClasses[item.color] || ""}`}
           >
             {item.tag}
           </span>

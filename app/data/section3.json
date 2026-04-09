@@ -1,0 +1,42 @@
+{
+  "heading": {
+    "prefix": "An",
+    "highlight": "all-in-one",
+    "suffix": "app",
+    "line2": "that makes it easier"
+  },
+  "checklist": [
+    "Est et in pharetra magna adipiscing ornare aliquam.",
+    "Tellus arcu sed consequat ac velit ut eu blandit.",
+    "Ullamcorper ornare in et egestas dolor orci."
+  ],
+  "ctaLink": {
+    "text": "Find more about the app →",
+    "href": "#"
+  },
+  "previewImage": {
+    "src": "/section_3/Video.svg",
+    "alt": "app preview"
+  },
+  "backgroundBlob": {
+    "src": "/section_3/Blob.svg",
+    "alt": ""
+  },
+  "courseCards": [
+    {
+      "tag": "Featured",
+      "color": "purple",
+      "text": "The map of mathematics"
+    },
+    {
+      "tag": "Popular",
+      "color": "blue",
+      "text": "Design for how people think"
+    },
+    {
+      "tag": "New",
+      "color": "green",
+      "text": "International & commercial law"
+    }
+  ]
+}

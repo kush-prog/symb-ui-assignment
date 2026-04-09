@@ -1,11 +1,14 @@
 import Image from "next/image";
+import ctaData from "@/app/data/cta.json";
 
 export default function Background() {
+  const { backgroundImages } = ctaData;
+
   return (
     <>
       <Image
-        src="/section8/left-card.svg"
-        alt=""
+        src={backgroundImages.left.src}
+        alt={backgroundImages.left.alt}
         width={400}
         height={400}
         className="
@@ -20,8 +23,8 @@ export default function Background() {
       />
 
       <Image
-        src="/section8/right-card.svg"
-        alt=""
+        src={backgroundImages.right.src}
+        alt={backgroundImages.right.alt}
         width={400}
         height={400}
         className="
