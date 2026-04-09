@@ -2,7 +2,7 @@ import TestimonialCard from "./TestimonialCards";
 
 export default function Slider() {
   return (
-    <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
       <TestimonialCard
         text="Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non..."

@@ -14,7 +14,7 @@ export default function TestimonialCard({
   image,
 }: Props) {
   return (
-    <div className="min-w-[280px] md:min-w-[350px] bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
+    <div className="bg-[#F7F7F7] rounded-xl p-6 shadow-sm hover:shadow-md transition border border-gray-100">
 
       <p className="text-gray-600 text-sm leading-relaxed">
         {text}

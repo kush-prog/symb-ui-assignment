@@ -7,10 +7,11 @@ export default function CourseCards() {
         gap-4 
         mt-6 md:mt-0
         md:absolute 
-        md:bottom-[-50px] 
+        md:bottom-[-40px] 
         md:left-1/2 
         md:-translate-x-1/2
         z-20
+        w-full md:w-auto
       "
     >
       {[
@@ -23,6 +24,7 @@ export default function CourseCards() {
           className="
             bg-white p-4 rounded-xl shadow 
             w-full sm:w-[180px]
+            shrink-0
           "
         >
           <span

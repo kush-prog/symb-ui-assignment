@@ -3,7 +3,7 @@ import Background from "./Background";
 
 export default function Cta() {
   return (
-    <section className="relative bg-[#FACC15] min-h-[550px] md:min-h-[650px] lg:min-h-[750px] flex items-center overflow-hidden">
+    <section className="relative bg-[#FACC15] min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex items-center overflow-hidden">
 
       <Background />
 

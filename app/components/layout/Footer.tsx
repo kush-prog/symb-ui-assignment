@@ -5,13 +5,14 @@ export default function Footer() {
   return (
     <footer className="bg-[#0B1B33] text-gray-300 px-6 md:px-16 py-12">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
-          <div className="col-span-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Image
               src="/Logo.png"
               alt="uteach logo"
               width={120}
               height={40}
+              className="brightness-0 invert"
             />
           </div>
 
