@@ -1,7 +1,8 @@
 {
   "heading": {
-    "line1": "Teach students",
-    "highlight": "worldwide"
+    "highlight": "Teach",
+    "rest": " students worldwide",
+    "underlineSvg": "/hero_page_img/Vector-14.svg"
   },
   "description": "Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.",
   "buttons": {

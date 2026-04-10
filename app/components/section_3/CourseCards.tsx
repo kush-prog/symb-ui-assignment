@@ -21,6 +21,9 @@ export default function CourseCards() {
           <p className={styles.courseText}>
             {item.text}
           </p>
+          <p className={styles.courseDescription}>
+            {item.description}
+          </p>
 
           <button className={styles.courseBtn}>
             Take Lesson

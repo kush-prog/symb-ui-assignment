@@ -3,7 +3,8 @@
     "prefix": "An",
     "highlight": "all-in-one",
     "suffix": "app",
-    "line2": "that makes it easier"
+    "line2": "that makes it easier",
+    "underline": "/section_3/Vector-14.svg"
   },
   "checklist": [
     "Est et in pharetra magna adipiscing ornare aliquam.",
@@ -15,7 +16,7 @@
     "href": "#"
   },
   "previewImage": {
-    "src": "/section_3/Video.svg",
+    "src": "/section_3/Desktop.svg",
     "alt": "app preview"
   },
   "backgroundBlob": {
@@ -26,17 +27,20 @@
     {
       "tag": "Featured",
       "color": "purple",
-      "text": "The map of mathematics"
+      "text": "The map of mathematics",
+      "description": "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."
     },
     {
       "tag": "Popular",
       "color": "blue",
-      "text": "Design for how people think"
+      "text": "Design for how people think",
+      "description": "Aliquam ut euismod condimentum elementum ultricies volutpat sit non."
     },
     {
       "tag": "New",
       "color": "green",
-      "text": "International & commercial law"
+      "text": "International & commercial law",
+      "description": "Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui."
     }
   ]
 }

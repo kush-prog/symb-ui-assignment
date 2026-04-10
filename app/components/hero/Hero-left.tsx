@@ -10,12 +10,19 @@ export default function HeroLeft() {
     <div className={styles.left}>
 
       <h1 className={styles.heading}>
-        {heading.line1} <br />
         <span className={styles.highlight}>
           {heading.highlight}
-          <span className={styles.highlightBar} />
+          <Image
+            src={heading.underlineSvg}
+            alt=""
+            width={140}
+            height={12}
+            className={styles.highlightSvg}
+          />
         </span>
+        {heading.rest}
       </h1>
+
 
       <p className={styles.description}>
         {description}

@@ -1,5 +1,6 @@
 import section3Data from "@/app/data/section3.json";
 import styles from "@/app/styles/section3.module.css";
+import Image from "next/image";
 
 export default function Content() {
   const { heading, checklist, ctaLink } = section3Data;
@@ -11,7 +12,15 @@ export default function Content() {
         {heading.prefix}{" "}
         <span className={styles.highlight}>
           {heading.highlight}
-          <span className={styles.highlightBar} />
+
+          <Image
+            src={heading.underline}
+            alt=""
+            width={140}
+            height={10}
+            className={styles.highlightVectorLine}
+          />
+
         </span>{" "}
         {heading.suffix} <br />
         {heading.line2}

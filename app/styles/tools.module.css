@@ -1,13 +1,13 @@
 .section {
   position: relative;
   background: var(--color-bg-light);
-  padding: var(--section-padding-y-desktop) 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .section {
-    padding: 112px 0;
+    padding: 100px 0;
   }
 }
 
@@ -34,12 +34,12 @@
 
 /* Header */
 .header {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 768px) {
   .header {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
   }
 }
 
@@ -58,21 +58,23 @@
 .headingHighlight {
   position: relative;
   display: inline-block;
+  font-style: italic;
+  isolation: isolate;
 }
 
 .headingUnderline {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 11px;
   width: 100%;
-  height: 8px;
-  background: var(--color-orange-highlight);
+  height: auto;
+  pointer-events: none;
   z-index: -1;
-  border-radius: var(--radius-sm);
 }
 
+
 .headerDesc {
-  margin-top: 24px;
+  margin-top: 20px;
   color: var(--color-text-gray);
   max-width: 640px;
   margin-left: auto;
@@ -81,25 +83,22 @@
   font-size: 15px;
 }
 
-/* Preview */
 .preview {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 48px;
-  margin-top: -16px;
+  margin-bottom: 14px;
 }
 
 @media (min-width: 768px) {
   .preview {
-    margin-bottom: 64px;
-    margin-top: -32px;
+    margin-bottom: 0;
   }
 }
 
 .previewCard {
   width: 100%;
-  max-width: 1024px;
+  max-width: 750px;
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-2xl);
@@ -112,25 +111,43 @@
   object-fit: cover;
 }
 
-/* Icons row */
+.lineswrap {
+  display: none;
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+@media (min-width: 768px) {
+  .lineswrap {
+    display: flex;
+  }
+}
+
+.lines {
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+}
+
 .iconsRow {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 24px;
+  gap: 20px;
+  margin-top: 16px;
 }
 
 @media (min-width: 768px) {
   .iconsRow {
-    gap: 24px;
-    margin-top: 40px;
+    gap: 36px;
+    margin-top: 0
   }
 }
 
 .iconBox {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   background: var(--color-white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
@@ -142,8 +159,8 @@
 
 @media (min-width: 768px) {
   .iconBox {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -152,35 +169,37 @@
 }
 
 .iconImg {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }
 
 @media (min-width: 768px) {
   .iconImg {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
   }
 }
 
-/* Background shapes */
 .bgShapeLeft {
   position: absolute;
   left: -80px;
-  top: 160px;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .bgVectorLeft {
   position: absolute;
-  left: 6%;
-  bottom: 320px;
+  left: 2%;
+  bottom: 20%;
+  pointer-events: none;;
 }
 
 .bgVectorRight {
   position: absolute;
-  right: -120px;
-  top: 80px;
+  right: -80px;
+  top: 20%;
   opacity: 0.8;
   pointer-events: none;
   user-select: none;

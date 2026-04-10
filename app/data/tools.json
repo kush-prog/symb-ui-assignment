@@ -2,13 +2,15 @@
   "heading": {
     "prefix": "All the",
     "highlight": "tools",
-    "suffix": "that you need"
+    "suffix": "that you need",
+    "underline": "/section_2/Vector-14.svg"
   },
   "description": "Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.",
   "previewImage": {
     "src": "/section_2/Desktop.svg",
     "alt": "uteach platform preview"
   },
+  "lines": "/section_2/Lines.svg",
   "icons": [
     "/section_2/bottom_icon_1.svg",
     "/section_2/bottom_icon_2.svg",
