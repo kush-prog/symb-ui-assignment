@@ -1,21 +1,23 @@
 .section {
   position: relative;
   background: var(--color-yellow);
-  min-height: 400px;
+  padding: 80px 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
   .section {
-    min-height: 500px;
+    padding: 120px 40px;
   }
 }
 
 @media (min-width: 1024px) {
   .section {
-    min-height: 600px;
+    padding: 300px  40px;
   }
 }
 
@@ -23,7 +25,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 0 var(--container-padding-mobile);
-  text-align: center;
+  text-align: center; 
   position: relative;
   z-index: 10;
   width: 100%;
@@ -70,15 +72,18 @@
   background: var(--color-orange-hover);
 }
 
-/* Background decorations */
 .bgLeft {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   z-index: 0;
-  opacity: 0.9;
-  pointer-events: none;
+  opacity: 1;
+  max-width: 35vw;
+  width: 467px;
+  height: 636px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .bgRight {
@@ -87,11 +92,14 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 0;
-  opacity: 0.9;
-  pointer-events: none;
+  opacity: 1;
+  max-width: 35vw;
+  width: 467px;
+  height: 636px;
+  object-fit: contain;
+  object-position: left center;
 }
 
-/* Hide decorations on small screens to prevent overlap */
 @media (max-width: 767px) {
   .bgLeft,
   .bgRight {

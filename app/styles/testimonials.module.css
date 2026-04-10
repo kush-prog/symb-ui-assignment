@@ -1,11 +1,12 @@
 .section {
-  background: var(--color-white);
-  padding: var(--section-padding-y-mobile) 0;
+  background: var(--color-bg-light);
+  padding: 80px 0;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .section {
-    padding: 96px 0;
+    padding: 112px 0;
   }
 }
 
@@ -21,6 +22,7 @@
 @media (min-width: 768px) {
   .inner {
     padding: 0 var(--container-padding-tablet);
+    gap: 64px;
   }
 }
 
@@ -37,31 +39,33 @@
 }
 
 .heading {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--color-text-dark);
 }
 
 @media (min-width: 768px) {
   .heading {
-    font-size: 28px;
+    font-size: 44px;
   }
 }
 
 .navButtons {
   display: flex;
-  gap: 12px;
+  gap: 16px;
 }
 
 .navBtn {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--color-orange);
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--color-orange);
   border-radius: var(--radius-full);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background var(--transition-fast);
+  transition: all var(--transition-fast);
+  cursor: pointer;
 }
 
 .navBtn:hover {
@@ -69,59 +73,71 @@
 }
 
 .navBtnIcon {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .cardsGrid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
 @media (min-width: 768px) {
   .cardsGrid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
   }
 }
 
 .card {
-  background: var(--color-bg-card);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  box-shadow: var(--shadow-sm);
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--color-border-light);
-  transition: box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
 .card:hover {
-  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.08);
 }
 
 .cardText {
   color: var(--color-text-gray);
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .cardAuthor {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 24px;
+  gap: 16px;
+  margin-top: 32px;
 }
 
 .authorAvatar {
   border-radius: var(--radius-full);
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
 }
 
 .authorName {
   font-weight: 600;
   color: var(--color-text-dark);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .authorRole {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color-text-gray);
+  margin-top: 2px;
 }
