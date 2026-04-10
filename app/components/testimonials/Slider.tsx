@@ -1,12 +1,12 @@
 import TestimonialCard from "./TestimonialCards";
 import testimonialsData from "@/app/data/testimonials.json";
+import styles from "@/app/styles/testimonials.module.css";
 
 export default function Slider() {
   const { cards } = testimonialsData;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
+    <div className={styles.cardsGrid}>
       {cards.map((card, i) => (
         <TestimonialCard
           key={i}
@@ -16,7 +16,6 @@ export default function Slider() {
           image={card.image}
         />
       ))}
-
     </div>
   );
 }

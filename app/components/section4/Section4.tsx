@@ -1,15 +1,13 @@
 import ImageGrid from "./ImageGrid";
 import Content from "./Content";
+import styles from "@/app/styles/section4.module.css";
 
 export default function Section4() {
   return (
-    <section className="bg-white py-20 md:py-28">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-12 items-center">
-
+    <section className={styles.section}>
+      <div className={styles.grid}>
         <ImageGrid />
-
         <Content />
-
       </div>
     </section>
   );

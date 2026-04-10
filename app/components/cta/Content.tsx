@@ -1,20 +1,21 @@
 import ctaData from "@/app/data/cta.json";
+import styles from "@/app/styles/cta.module.css";
 
 export default function Content() {
   const { heading, description, buttonText } = ctaData;
 
   return (
-    <div className="space-y-6">
+    <div className={styles.contentWrap}>
 
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0B1B33]">
+      <h2 className={styles.heading}>
         {heading}
       </h2>
 
-      <p className="text-[#0B1B33]/70 max-w-md mx-auto">
+      <p className={styles.description}>
         {description}
       </p>
 
-      <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+      <button className={styles.ctaBtn}>
         {buttonText}
       </button>
 

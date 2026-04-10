@@ -1,0 +1,187 @@
+.section {
+  position: relative;
+  background: var(--color-bg-light);
+  padding: var(--section-padding-y-desktop) 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 112px 0;
+  }
+}
+
+.inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding-mobile);
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    padding: 0 var(--container-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    padding: 0 var(--container-padding-desktop);
+  }
+}
+
+/* Header */
+.header {
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 64px;
+  }
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 44px;
+  }
+}
+
+.headingHighlight {
+  position: relative;
+  display: inline-block;
+}
+
+.headingUnderline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--color-orange-highlight);
+  z-index: -1;
+  border-radius: var(--radius-sm);
+}
+
+.headerDesc {
+  margin-top: 24px;
+  color: var(--color-text-gray);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* Preview */
+.preview {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  margin-top: -16px;
+}
+
+@media (min-width: 768px) {
+  .preview {
+    margin-bottom: 64px;
+    margin-top: -32px;
+  }
+}
+
+.previewCard {
+  width: 100%;
+  max-width: 1024px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-2xl);
+  background: var(--color-white);
+}
+
+.previewImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Icons row */
+.iconsRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .iconsRow {
+    gap: 24px;
+    margin-top: 40px;
+  }
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast);
+}
+
+@media (min-width: 768px) {
+  .iconBox {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.iconBox:hover {
+  transform: scale(1.1);
+}
+
+.iconImg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .iconImg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Background shapes */
+.bgShapeLeft {
+  position: absolute;
+  left: -80px;
+  top: 160px;
+  opacity: 0.6;
+}
+
+.bgVectorLeft {
+  position: absolute;
+  left: 6%;
+  bottom: 320px;
+}
+
+.bgVectorRight {
+  position: absolute;
+  right: -120px;
+  top: 80px;
+  opacity: 0.8;
+  pointer-events: none;
+  user-select: none;
+}

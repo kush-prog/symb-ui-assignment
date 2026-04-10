@@ -1,14 +1,13 @@
 import Header from "./Header";
 import Slider from "./Slider";
+import styles from "@/app/styles/testimonials.module.css";
 
 export default function Testimonials() {
   return (
-    <section className="bg-white py-16 md:py-24">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-16 space-y-10">
-
+    <section className={styles.section}>
+      <div className={styles.inner}>
         <Header />
         <Slider />
-
       </div>
     </section>
   );

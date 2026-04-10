@@ -1,5 +1,6 @@
 import Image from "next/image";
 import section3Data from "@/app/data/section3.json";
+import styles from "@/app/styles/section3.module.css";
 
 export default function Background() {
   const { backgroundBlob } = section3Data;
@@ -10,14 +11,7 @@ export default function Background() {
       alt={backgroundBlob.alt}
       width={320}
       height={320}
-      className="
-        absolute 
-        right-[30%] 
-        top-[50%] 
-        -translate-y-1/2 
-        z-0 
-        opacity-100
-      "
+      className={styles.bgBlob}
     />
   );
 }

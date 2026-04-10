@@ -1,0 +1,139 @@
+.section {
+  background: var(--color-white);
+  padding: var(--section-padding-y-desktop) 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 112px 0;
+  }
+}
+
+.grid {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding-mobile);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 var(--container-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    padding: 0 var(--container-padding-desktop);
+  }
+}
+
+/* Image Grid */
+.imageWrap {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .imageWrap {
+    justify-content: flex-start;
+  }
+}
+
+.collageImage {
+  width: 85%;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .collageImage {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .collageImage {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .collageImage {
+    width: 500px;
+  }
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content {
+    text-align: left;
+  }
+}
+
+.headingWrap {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  position: absolute;
+  top: -24px;
+  left: 55%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .icon {
+    left: 45%;
+  }
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 36px;
+  }
+}
+
+.description {
+  color: var(--color-text-gray);
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .description {
+    margin: 0;
+  }
+}
+
+.ctaLink {
+  color: var(--color-blue-link);
+  font-weight: 500;
+  display: inline-block;
+  font-size: 15px;
+  transition: opacity var(--transition-fast);
+}
+
+.ctaLink:hover {
+  opacity: 0.8;
+}

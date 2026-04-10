@@ -1,24 +1,25 @@
 import featuresData from "@/app/data/features.json";
+import styles from "@/app/styles/features.module.css";
 
 export default function FeatureCard() {
   const { featureCard } = featuresData;
 
   return (
-    <div className="bg-white p-4 rounded-xl shadow-lg w-[200px]">
+    <div className={styles.featureCard}>
 
-      <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">
+      <span className={styles.featureTag}>
         {featureCard.tag}
       </span>
 
-      <h4 className="mt-2 font-semibold text-sm text-gray-900">
+      <h4 className={styles.featureTitle}>
         {featureCard.title}
       </h4>
 
-      <p className="text-xs text-gray-600 mt-1">
+      <p className={styles.featureDesc}>
         {featureCard.description}
       </p>
 
-      <button className="mt-3 text-xs text-blue-600 border border-blue-600 px-3 py-1 rounded">
+      <button className={styles.featureBtn}>
         {featureCard.buttonText}
       </button>
     </div>

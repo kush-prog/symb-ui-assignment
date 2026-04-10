@@ -2,14 +2,15 @@ import ToolsHeader from "./Hearder";
 import ToolsPreview from "./Preview";
 import ToolsIcons from "./Icons";
 import BackgroundShapes from "./BackgroundShapes";
+import styles from "@/app/styles/tools.module.css";
 
 export default function ToolsSection() {
   return (
-    <section className="relative bg-[#f5f7fb] py-20 md:py-28 overflow-hidden">
+    <section className={styles.section}>
 
       <BackgroundShapes />
 
-      <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-16 text-center relative z-10">
+      <div className={styles.inner}>
         <ToolsHeader />
         <ToolsPreview />
         <ToolsIcons />

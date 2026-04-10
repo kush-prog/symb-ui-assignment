@@ -1,0 +1,129 @@
+.section {
+  background: var(--color-white);
+  padding: var(--section-padding-y-mobile) 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 96px 0;
+  }
+}
+
+.inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding-mobile);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    padding: 0 var(--container-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    padding: 0 var(--container-padding-desktop);
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+.navButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.navBtn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-orange);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+}
+
+.navBtn:hover {
+  background: var(--color-orange);
+}
+
+.navBtnIcon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Cards Grid */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-light);
+  transition: box-shadow var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.cardText {
+  color: var(--color-text-gray);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.cardAuthor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.authorAvatar {
+  border-radius: var(--radius-full);
+}
+
+.authorName {
+  font-weight: 600;
+  color: var(--color-text-dark);
+  font-size: 14px;
+}
+
+.authorRole {
+  font-size: 12px;
+  color: var(--color-text-gray);
+}

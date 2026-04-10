@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ctaData from "@/app/data/cta.json";
+import styles from "@/app/styles/cta.module.css";
 
 export default function Background() {
   const { backgroundImages } = ctaData;
@@ -11,15 +12,7 @@ export default function Background() {
         alt={backgroundImages.left.alt}
         width={400}
         height={400}
-        className="
-          absolute 
-          left-0 
-          top-1/2 
-          -translate-y-1/2 
-          z-0 
-          opacity-90
-          pointer-events-none
-        "
+        className={styles.bgLeft}
       />
 
       <Image
@@ -27,15 +20,7 @@ export default function Background() {
         alt={backgroundImages.right.alt}
         width={400}
         height={400}
-        className="
-          absolute 
-          right-0 
-          top-1/2 
-          -translate-y-1/2 
-          z-0 
-          opacity-90
-          pointer-events-none
-        "
+        className={styles.bgRight}
       />
     </>
   );

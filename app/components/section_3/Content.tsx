@@ -1,28 +1,29 @@
 import section3Data from "@/app/data/section3.json";
+import styles from "@/app/styles/section3.module.css";
 
 export default function Content() {
   const { heading, checklist, ctaLink } = section3Data;
 
   return (
-    <div className="space-y-6 text-center md:text-left">
+    <div className={styles.content}>
 
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+      <h2 className={styles.heading}>
         {heading.prefix}{" "}
-        <span className="relative inline-block">
+        <span className={styles.highlight}>
           {heading.highlight}
-          <span className="absolute left-0 bottom-1 w-full h-2 bg-orange-400 -z-10 rounded"></span>
+          <span className={styles.highlightBar} />
         </span>{" "}
         {heading.suffix} <br />
         {heading.line2}
       </h2>
 
-      <ul className="text-gray-600 space-y-2">
+      <ul className={styles.checklist}>
         {checklist.map((item, i) => (
-          <li key={i}>✔ {item}</li>
+          <li key={i} className={styles.checklistItem}>✔ {item}</li>
         ))}
       </ul>
 
-      <a href={ctaLink.href} className="text-blue-600 font-medium">
+      <a href={ctaLink.href} className={styles.ctaLink}>
         {ctaLink.text}
       </a>
     </div>
