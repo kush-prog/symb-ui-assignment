@@ -9,6 +9,7 @@ export default function Content() {
     <div className={styles.content}>
     
       <div className={styles.headingWrap}>
+        
         <Image
           src={icon.src}
           alt={icon.alt}

@@ -32,7 +32,6 @@
   }
 }
 
-/* Image Grid */
 .imageWrap {
   display: flex;
   justify-content: center;
@@ -67,7 +66,6 @@
   }
 }
 
-/* Content */
 .content {
   display: flex;
   flex-direction: column;
@@ -89,19 +87,19 @@
 .icon {
   position: absolute;
   top: -24px;
-  left: 55%;
+  left: 62%;
   transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {
   .icon {
-    left: 45%;
+    left: 52%;
   }
 }
 
 .heading {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text-dark);
   line-height: 1.2;
 }
