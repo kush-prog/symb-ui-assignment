@@ -1,34 +1,45 @@
 .section {
   position: relative;
   background: var(--color-yellow);
-  padding: 80px 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 @media (min-width: 768px) {
   .section {
-    padding: 120px 40px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 200px 40px;
   }
 }
 
 @media (min-width: 1024px) {
   .section {
-    padding: 300px  40px;
+    padding: 300px 40px;
   }
 }
 
 .inner {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 var(--container-padding-mobile);
-  text-align: center; 
+  padding: 60px var(--container-padding-mobile);
+  text-align: center;
   position: relative;
   z-index: 10;
   width: 100%;
+  order: 2;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    padding: 0 var(--container-padding-mobile);
+    order: unset;
+    position: relative;
+  }
 }
 
 .contentWrap {
@@ -61,11 +72,13 @@
 .ctaBtn {
   background: var(--color-orange);
   color: var(--color-white);
-  padding: 12px 24px;
+  padding: 16px 36px;
   border-radius: var(--radius-md);
   font-weight: 600;
   font-size: 16px;
   transition: background var(--transition-fast);
+  border: none;
+  cursor: pointer;
 }
 
 .ctaBtn:hover {
@@ -73,37 +86,47 @@
 }
 
 .bgLeft {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
-  opacity: 1;
-  max-width: 35vw;
-  width: 467px;
-  height: 636px;
+  position: relative;
+  width: 100%;
+  height: auto;
   object-fit: contain;
-  object-position: left center;
+  order: 1;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .bgLeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: right center;
+    order: unset;
+  }
 }
 
 .bgRight {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
-  opacity: 1;
-  max-width: 35vw;
-  width: 467px;
-  height: 636px;
+  position: relative;
+  width: 100%;
+  height: auto;
   object-fit: contain;
-  object-position: left center;
+  order: 3;
+  z-index: 0;
 }
 
-@media (max-width: 767px) {
-  .bgLeft,
+@media (min-width: 768px) {
   .bgRight {
-    opacity: 0.3;
-    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: left center;
+    order: unset;
   }
 }

@@ -39,7 +39,7 @@
   object-fit: contain;
 }
 
-/* Desktop nav links */
+
 .navLinks {
   display: none;
   align-items: center;
@@ -79,7 +79,7 @@
   font-size: 12px;
 }
 
-/* Auth buttons */
+
 .authButtons {
   display: none;
   align-items: center;
@@ -116,7 +116,7 @@
   color: var(--color-white);
 }
 
-/* Mobile hamburger */
+
 .hamburger {
   display: flex;
   align-items: center;
@@ -142,7 +142,7 @@
   background: var(--color-text-dark);
 }
 
-/* Mobile menu */
+
 .mobileMenu {
   padding: 0 var(--container-padding-mobile) 16px;
   display: flex;

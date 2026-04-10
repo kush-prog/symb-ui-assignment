@@ -42,12 +42,11 @@
   }
 }
 
-/* Hero Left */
 .left {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -57,7 +56,7 @@
 }
 
 .heading {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--color-text-dark);
   line-height: 1.15;
@@ -94,7 +93,7 @@
 .description {
   color: var(--color-text-gray);
   max-width: 440px;
-  margin: 0 auto;
+  margin: 0;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -113,10 +112,10 @@
 
 .buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 16px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 @media (min-width: 640px) {
@@ -138,14 +137,10 @@
   border-radius: var(--radius-md);
   font-weight: 600;
   font-size: 16px;
-  width: 100%;
+  width: auto;
   transition: background var(--transition-fast);
-}
-
-@media (min-width: 640px) {
-  .primaryBtn {
-    width: auto;
-  }
+  border: none;
+  cursor: pointer;
 }
 
 .primaryBtn:hover {
@@ -219,7 +214,7 @@
 .logoRow {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -261,7 +256,7 @@
 }
 
 .heroImage {
-  width: 90%;
+  width: 100%;
   object-fit: contain;
 }
 

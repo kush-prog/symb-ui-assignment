@@ -1,6 +1,6 @@
 .section {
   background: var(--color-white);
-  padding: var(--section-padding-y-desktop) 0;
+  padding: 60px 0;
 }
 
 @media (min-width: 768px) {
@@ -35,6 +35,7 @@
 .imageWrap {
   display: flex;
   justify-content: center;
+  order: 2;
 }
 
 @media (min-width: 768px) {
@@ -45,6 +46,7 @@
 
 .collageImage {
   width: 85%;
+  max-width: 400px;
   object-fit: contain;
 }
 
@@ -70,7 +72,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  text-align: center;
+  text-align: left;
+  order: 1;
 }
 
 @media (min-width: 768px) {
@@ -86,14 +89,18 @@
 
 .icon {
   position: absolute;
-  top: -24px;
-  left: 62%;
-  transform: translateX(-50%);
+  top: -10px;
+  left: auto;
+  right: -5px;
+  transform: none;
 }
 
 @media (min-width: 768px) {
   .icon {
     left: 52%;
+    right: auto;
+    top: -24px;
+    transform: translateX(-50%);
   }
 }
 
@@ -113,7 +120,7 @@
 .description {
   color: var(--color-text-gray);
   max-width: 440px;
-  margin: 0 auto;
+  margin: 0;
   line-height: 1.7;
   font-size: 15px;
 }
@@ -134,4 +141,13 @@
 
 .ctaLink:hover {
   opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .content {
+    order: unset;
+  }
+  .imageWrap {
+    order: unset;
+  }
 }

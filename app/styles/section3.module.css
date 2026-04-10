@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -121,7 +121,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 
 .previewImage {
@@ -131,12 +131,6 @@
   max-width: 480px;
   object-fit: contain;
   filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
-}
-
-@media (min-width: 768px) {
-  .previewImage {
-    width: 520px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -154,45 +148,66 @@
 
 .courseCards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 12px;
-  margin-top: 24px;
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .courseCards {
-    flex-direction: row;
-    gap: 12px;
-  }
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 400px;
+  z-index: 20;
+  margin-top: 0;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .courseCards {
-    position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: auto;
-    margin-top: 0;
-    z-index: 20;
+    max-width: none;
+    overflow: visible;
   }
 }
 
 .courseCard {
   background: var(--color-white);
-  padding: 20px;
+  padding: 16px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  width: 100%;
+  min-width: 45%;
+  flex: 1;
   flex-shrink: 0;
   text-align: left;
 }
 
 @media (min-width: 640px) {
   .courseCard {
+    padding: 20px;
     width: 190px;
+    min-width: auto;
+    flex: none;
   }
+}
+
+.courseBtn {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--color-blue-link);
+  border: 1px solid var(--color-blue-link);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
+}
+
+.courseBtn:hover {
+  background: var(--color-blue-link);
+  color: var(--color-white);
 }
 
 .courseTag {
@@ -200,6 +215,7 @@
   padding: 4px 8px;
   border-radius: var(--radius-sm);
   font-weight: 500;
+  display: inline-block;
 }
 
 .tagPurple {
@@ -247,7 +263,7 @@
   color: var(--color-white);
 }
 
-/* Background blob */
+
 .bgBlob {
   position: absolute;
   right: 30%;
