@@ -11,11 +11,11 @@
   },
   "trustedByText": "Trusted by leading companies",
   "companyLogos": [
-    { "src": "/hero_page_img/Black and white Collection 3.png", "alt": "Company 1" },
-    { "src": "/hero_page_img/Black and white Collection 2.png", "alt": "Company 2" },
-    { "src": "/hero_page_img/Black and white Collection 11.png", "alt": "Company 3" },
-    { "src": "/hero_page_img/Black and white Collection 20.png", "alt": "Company 4" },
-    { "src": "/hero_page_img/Black and white Collection 2.png", "alt": "Company 5" }
+    { "src": "/hero_page_img/icon_3.png", "alt": "Company 1" },
+    { "src": "/hero_page_img/icon_2.png", "alt": "Company 2" },
+    { "src": "/hero_page_img/icon_4.png", "alt": "Company 3" },
+    { "src": "/hero_page_img/icon_5.png", "alt": "Company 4" },
+    { "src": "/hero_page_img/icon_1.png", "alt": "Company 5" }
   ],
   "heroImage": {
     "src": "/hero_page_img/home.png",
