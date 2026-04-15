@@ -103,11 +103,15 @@
 
 .previewCard {
   width: 100%;
-  max-width: 750px;
+  max-width: 1000px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: var(--shadow-2xl);
-  background: var(--color-white);
+}
+
+@media (min-width: 1280px) {
+  .previewCard {
+    max-width: 1000px;
+  }
 }
 
 .previewImage {
@@ -192,26 +196,57 @@
 
 .bgShapeLeft {
   position: absolute;
-  left: -80px;
+  left: calc(50% - 640px + 60px);
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.6;
   pointer-events: none;
+  width: 150px;
+  height: auto;
+  z-index: 1;
 }
 
 .bgVectorLeft {
   position: absolute;
-  left: 2%;
-  bottom: 20%;
+  left: calc(50% - 640px - 60px);
+  bottom: 30%;
   pointer-events: none;
-  ;
+  width: 300px;
+  height: auto;
+  z-index: 0;
 }
 
 .bgVectorRight {
   position: absolute;
-  right: -80px;
-  top: 20%;
+  right: calc(50% - 640px - 40px);
+  top: 15%;
   opacity: 0.8;
   pointer-events: none;
   user-select: none;
+  width: 300px;
+  height: auto;
+  z-index: 0;
+}
+
+@media (max-width: 1400px) {
+  .bgShapeLeft {
+    left: 20px;
+  }
+
+  .bgVectorLeft {
+    left: -60px;
+  }
+
+  .bgVectorRight {
+    right: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .bgShapeLeft,
+  .bgVectorLeft,
+  .bgVectorRight {
+    display: none;
+  }
 }
