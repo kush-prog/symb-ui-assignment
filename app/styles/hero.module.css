@@ -180,7 +180,6 @@
 
 .trusted {
   padding-top: 16px;
-  border-top: 1px solid var(--color-border-light);
 }
 
 .trustedInner {
@@ -214,7 +213,7 @@
 .logoRow {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }

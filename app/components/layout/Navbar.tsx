@@ -14,29 +14,31 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.navInner}>
 
-        <div className={styles.logo}>
-          <Image
-            src={logo.src}
-            alt={logo.alt}
-            width={logo.width}
-            height={logo.height}
-            className={styles.logoImg}
-          />
-        </div>
+        <div className={styles.leftSection}>
+          <div className={styles.logo}>
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={logo.width}
+              height={logo.height}
+              className={styles.logoImg}
+            />
+          </div>
 
-        <div className={styles.navLinks}>
-          {navLinks.map((link) => (
-            <Link key={link.label} href={link.href} className={styles.navLink}>
-              {link.label}
-            </Link>
-          ))}
+          <div className={styles.navLinks}>
+            {navLinks.map((link) => (
+              <Link key={link.label} href={link.href} className={styles.navLink}>
+                {link.label}
+              </Link>
+            ))}
 
-          {dropdownLinks.map((link) => (
-            <div key={link.label} className={styles.dropdown}>
-              <span>{link.label}</span>
-              <span className={styles.dropdownArrow}>▾</span>
-            </div>
-          ))}
+            {dropdownLinks.map((link) => (
+              <div key={link.label} className={styles.dropdown}>
+                <span>{link.label}</span>
+                <span className={styles.dropdownArrow}>▾</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className={styles.authButtons}>

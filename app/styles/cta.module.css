@@ -88,8 +88,9 @@
 .bgLeft {
   position: relative;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 180px;
+  object-fit: cover;
+  object-position: center bottom;
   order: 1;
   z-index: 0;
 }
@@ -111,8 +112,9 @@
 .bgRight {
   position: relative;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top;
   order: 3;
   z-index: 0;
 }

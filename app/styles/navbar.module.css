@@ -30,6 +30,12 @@
   }
 }
 
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .logo {
   display: flex;
   align-items: center;

@@ -102,12 +102,15 @@
 
 .visual {
   position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1.25;
+  width: 140%; /* Expand to force the right side to overflow and scale up all elements */
+  margin-left: -5%; /* Shift it slightly left so the card doesn't look too far right and balances the stretch */
+  aspect-ratio: 1 / 1; /* Adjust aspect ratio to keep height proportional without getting too tall */
 }
 
 @media (min-width: 768px) {
   .visual {
+    width: 100%;
+    margin-left: 0;
     aspect-ratio: auto;
     height: 520px;
   }
@@ -159,7 +162,7 @@
 .featureCardWrap {
   position: absolute;
   top: 5%;
-  left: 0%;
+  left: 20%; 
   z-index: 40;
 }
 
@@ -208,8 +211,8 @@
 
 .pictureImg {
   position: absolute;
-  bottom: 0%;
-  left: 0%;
+  bottom: 0; 
+  left: 0; 
   z-index: 20;
   width: 55%;
   height: auto;
@@ -251,8 +254,8 @@
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-  width: 55%;
-  max-width: 200px;
+  width: 65%; /* <-- CHANGE THIS VALUE to make the card wider/narrower */
+  max-width: 280px; /* <-- CHANGE THIS VALUE to control its maximum width */
   height: auto;
   display: flex;
   flex-direction: column;

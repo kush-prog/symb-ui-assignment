@@ -23,6 +23,10 @@
     "src": "/section_3/Blob.svg",
     "alt": ""
   },
+  "decorativeIcons": {
+    "src": "/section_3/Icons.svg",
+    "alt": ""
+  },
   "courseCards": [
     {
       "tag": "Featured",

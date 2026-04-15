@@ -8,7 +8,7 @@ export default function ToolsIcons() {
   return (
     <div className={styles.iconsRow}>
       {icons.map((icon, index) => (
-        <div key={index} className={styles.iconBox}>
+        <div key={index} className={`${styles.iconBox}${index === 1 ? ` ${styles.iconBoxHighlight}` : ""}`}>
           <Image src={icon} alt="" width={24} height={24} className={styles.iconImg} />
         </div>
       ))}

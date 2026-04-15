@@ -46,7 +46,8 @@ export default function HeroLeft() {
       <div className={styles.trusted}>
         <div className={styles.trustedInner}>
           <p className={styles.trustedText}>
-            {trustedByText}
+            {trustedByText.line1} <br />
+            {trustedByText.line2}
           </p>
 
           <div className={styles.logoRow}>

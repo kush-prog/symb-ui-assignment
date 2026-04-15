@@ -87,20 +87,25 @@
   display: inline-block;
 }
 
+.wordWrap {
+  position: relative;
+  display: inline-block;
+}
+
 .icon {
   position: absolute;
-  top: -10px;
-  left: auto;
-  right: -5px;
+  top: -24px;
+  right: 0px;
   transform: none;
+  width: 32px;
+  height: auto;
 }
 
 @media (min-width: 768px) {
   .icon {
-    left: 52%;
-    right: auto;
-    top: -24px;
-    transform: translateX(-50%);
+    top: -28px;
+    right: 0px;
+    width: 40px;
   }
 }
 

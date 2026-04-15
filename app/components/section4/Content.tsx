@@ -9,17 +9,17 @@ export default function Content() {
     <div className={styles.content}>
     
       <div className={styles.headingWrap}>
-        
-        <Image
-          src={icon.src}
-          alt={icon.alt}
-          width={40}
-          height={40}
-          className={styles.icon}
-        />
-
         <h2 className={styles.heading}>
-          {heading.line1} <br />
+          Meet <span className={styles.wordWrap}>
+            international
+            <Image
+              src={icon.src}
+              alt={icon.alt}
+              width={40}
+              height={40}
+              className={styles.icon}
+            />
+          </span> <br />
           {heading.line2}
         </h2>
       </div>
