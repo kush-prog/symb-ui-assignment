@@ -71,3 +71,23 @@ a:focus {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
+
+@media (max-width: 768px) {
+  /* Global override to left-align all text content on mobile views per Figma */
+  .text-center, 
+  .hero-container,
+  .hero-left,
+  .hero-left1,
+  .hero-left2,
+  .tools-header,
+  .stat,
+  .features-header,
+  .features-content,
+  .appshowcase-section,
+  .appshowcase-content,
+  .student-right {
+    text-align: left !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+}

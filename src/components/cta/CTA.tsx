@@ -13,6 +13,7 @@ export default function CTA(): JSX.Element {
           alt="users illustration top"
           width={760}
           height={600}
+          style={{ width: "100%", height: "auto" }}
         />
       </picture>
 
@@ -34,6 +35,7 @@ export default function CTA(): JSX.Element {
           alt="users illustration bottom"
           width={600}
           height={600}
+          style={{ width: "100%", height: "auto" }}
         />
       </picture>
 

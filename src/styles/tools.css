@@ -127,8 +127,9 @@
 
   .tools-icons-head {
     gap: var(--space-md);
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    justify-content: flex-start;
   }
 
   .lines {
@@ -177,6 +178,7 @@
 
   .tools-icons-head {
     gap: var(--space-sm);
+    flex-wrap: nowrap;
     overflow-x: hidden;
     justify-content: flex-start;
     padding-bottom: 10px;

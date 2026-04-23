@@ -18,11 +18,6 @@
   width: 100%;
 }
 
-.cta-bg img {
-  width: 100%;
-  height: auto;
-}
-
 .cta-bg.left {
   left: 0;
 }
