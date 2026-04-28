@@ -1,49 +1,51 @@
-"use client";
-import { useState } from "react";
+import { Menu } from "lucide-react";
 import Image from "next/image";
-import "../../styles/navbar.css";
+import styles from "./navbar.module.css"
+import "@/app/globals.css"
 
 export default function Navbar() {
-  const [open, setOpen] = useState<boolean>(false);
-
   return (
-    <nav className="navbar d-flex justify-content-between align-items-center">
+    <nav className="bg-white">
+      <div className={styles.navbarContainer}>
 
-      <div className="navbar-left d-flex">
-        <div className="d-flex align-items-center gap-1">
-          <span className="logo">
-            <Image src="/images/logo.png" alt="uteach logo" width={32} height={32} />
-          </span>
-          <h4 className="mb-0">teach</h4>
+        <div className={styles.leftSection}>
+          <Image
+            src="/images/Logo.png"
+            alt="Logo"
+            width={103}
+            height={35}
+            priority
+          />
+
+          <ul className={styles.navigationMenu}>
+            <li className={styles.navItem}>Products</li>
+            <li className={styles.navItem}>Solutions</li>
+            <li className={styles.navItem}>Pricing</li>
+
+            <li className={styles.dropdownItem}>
+              Resources
+              <Image
+                src="/icons/chevron-down.png"
+                alt="arrow"
+                width={24}
+                height={24}
+              />
+            </li>
+          </ul>
         </div>
 
-        <div className="navbar-center d-flex">
-          <a href="#">Products</a>
-          <a href="#">Solutions</a>
-          <a href="#">Pricing</a>
-          <a href="#">Resources</a>
+        <div className={styles.rightSection}>
+          <div className={styles.actionButtons}>
+            <button className={styles.loginButton}>Log In</button>
+            <button className={styles.signUpButton}>Sign Up Now</button>
+          </div>
+
+          <div className={styles.mobileMenuIcon}>
+            <Menu size={28} />
+          </div>
         </div>
+
       </div>
-
-      <div className="navbar-right d-flex align-items-center">
-        <a href="#">Log in</a>
-        <button className="btn btn-outline-dark">Sign Up Now</button>
-
-        <div className="hamburger" onClick={() => setOpen(!open)}>
-          ☰
-        </div>
-      </div>
-
-      {open && (
-        <div className="mobile-menu">
-          <a href="#">Products</a>
-          <a href="#">Solutions</a>
-          <a href="#">Pricing</a>
-          <a href="#">Resources</a>
-          <a href="#">Log in</a>
-          <button>Sign Up Now</button>
-        </div>
-      )}
     </nav>
   );
 }

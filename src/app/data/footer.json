@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "title": "Product",
+      "links": ["Pricing", "Overview", "Browse", "Accessibility"]
+    },
+    {
+      "title": "Solutions",
+      "links": ["Brainstorming", "Ideation", "Wireframing", "Research"]
+    },
+    {
+      "title": "Resources",
+      "links": ["Help Center", "Blog", "Tutorials", "FAQs"]
+    },
+    {
+      "title": "Support",
+      "links": ["Contact Us", "Developers", "Documentation", "Integrations"]
+    },
+    {
+      "title": "Company",
+      "links": ["About", "Press", "Events", "Request Demo ➞"]
+    }
+  ]
+}

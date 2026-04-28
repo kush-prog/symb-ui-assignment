@@ -1,0 +1,176 @@
+.sectionHeader {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.Header {
+    font-family: 'Roboto';
+    padding: clamp(16px, 5vw, 80px) clamp(24px, 6vw, 80px);
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(32px, 5vw, 80px);
+}
+
+.lcontainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 575px;
+    height: auto;
+    gap: clamp(32px, 5vw, 80px);
+}
+.head{
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 2.5vw, 32px);
+}
+.line{
+    position: relative;
+    display: inline-block;
+}
+
+.title {
+    font-weight: 800;
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 110%;
+    color: #0f172a;
+}
+
+.para {
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 24px);
+    line-height: 160%;
+    color: #0F172A;
+}
+.rcontainer {
+    width: 100%;
+    max-width: 600px;
+}
+
+.image {
+    flex: 1;
+    max-width: 624px;
+    width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.demo {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    border-radius: 8px;
+    padding: clamp(12px, 1.5vw, 16px) 8px;
+    width: 178px;
+    height: 56px;
+    font-weight: 500;
+    font-size: clamp(16px, 1.5vw, 20px);
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #2563eb;
+}
+.company{
+    display: block;
+}
+
+.signup {
+    border: 2px solid #ea580c;
+    background-color: #ea580c;
+    border-radius: 8px;
+    padding: clamp(12px, 1.5vw, 20px) clamp(16px, 2vw, 48px);
+    font-weight: 700;
+    font-size: clamp(16px, 2vw, 24px);
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.trust {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(16px, 3vw, 48px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #475569;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(16px, 3vw, 48px);
+}
+
+.vector {
+    position: absolute;
+    left: 2px;
+    bottom: -3px;
+    z-index: 0;
+}
+
+@media (max-width: 1024px) {
+    .Header {
+        padding: clamp(32px, 5vw, 60px) clamp(24px, 4vw, 40px);
+        gap: clamp(24px, 4vw, 40px);
+    }
+    .image {
+        max-width: 450px;
+    }
+    .company{
+        display: inline;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        padding: 48px 16px;
+        gap: 32px;
+    }
+    .lcontainer {
+        width: 100%;
+        max-width: 100%;
+        gap: 32px;
+    }
+    .trust {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        color: #475569;
+
+    }
+    .company{
+        display: inline;
+    }
+
+    .icon {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,168 @@
+.Header {
+    font-family: 'Roboto';
+    padding: 48px 18px;
+    width: 100%;
+    height: 1224px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.lcontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: left;
+}
+.title {
+    font-weight: 800;
+    font-size: clamp(24px, 5vw, 56px);
+    line-height: 110%;
+    color: #0f172a;
+}
+.head{
+    position: relative;
+    z-index: 10;
+}
+.line{
+    position: relative;
+    display: inline-block;
+}
+.rcontainer {
+    width: 100%;
+    max-width: 660px;
+    height: 472px;
+    position: relative;
+    flex: 1;
+}
+
+.para {
+    font-weight: 400;
+    font-size: clamp(16px, 4vw, 20px);
+    line-height: 160%;
+    color: #0F172A;
+}
+.parab {
+    font-weight: 400;
+    font-size: clamp(16px, 5vw, 20px);
+    line-height: 160%;
+    color: #0F172A;
+}
+
+.link {
+    font-weight: 500;
+    font-size: clamp(16px, 4vw, 20px);
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #2563eb;
+}
+.vector{
+    position: absolute;
+    left: 35px;
+    bottom: -3px;
+    z-index: 0;
+    width: 105px;
+}
+.blob3{
+    z-index: 0;
+    width: 320px;
+    height: 358px;
+    z-index: 0;
+    position: absolute;
+    top: 17px;
+    left: -60px;
+
+}
+.desktop{
+    display: none;
+}
+.desktopmb{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: -5px;
+    height: 364px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    z-index: 20;
+    position: absolute;
+    width: 633px;
+    top: 260px;
+    left: 25px;
+}
+
+@media (min-width: 1080px) {
+    .Header {
+    font-family: 'Roboto';
+    padding: 80px;
+    flex-direction: row;
+    height: 706px;
+    justify-content: space-between;
+    position: relative;
+}
+.rcontainer {
+    width: 100%;
+    max-width: 680px;
+    flex: 1;
+}
+.lcontainer {
+    max-width: 544px;
+    height: auto;
+    gap: 32px;
+}
+.para {
+    display: none;
+}
+.vector{
+    position: absolute;
+    left: 85px;
+    bottom: -9px;
+    z-index: 0;
+    width: 245px;
+}
+.blob3{
+    z-index: 0;
+    position: absolute;
+    width: 426px;
+    height: 468px;
+    z-index: 0;
+    top: 20px;
+    left: -40px;
+
+}
+.desktopmb{
+    display: none;
+}
+.desktop{
+    display: block;
+    z-index: 10;
+    position: absolute;
+    width: 680px;
+    /* height: 391px; */
+    top: 0px;
+    left: 20px;
+    height: 424px;
+}
+.cards{
+    gap: 18px;
+    z-index: 20;
+    position: absolute;
+    width: 633px;
+    bottom: -60px;
+    left: 0px;
+}
+}

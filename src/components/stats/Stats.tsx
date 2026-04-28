@@ -1,31 +1,47 @@
+"use client"
 import Image from "next/image";
-import { JSX } from "react";
-import "../../styles/stats.css";
+import "@/app/globals.css"
+import styles from "@/style/Section5.module.css"
+import cards from "@/app/data/cards5.json"
+import Card5 from "@/components/cards/TestimonialCard"
+import data from "@/app/data/headers.json"
+import { useScroll } from "@/hooks/useScroll";
+export default function Section5() {
+    const { scrollRef, scrollLeft, scrollRight } = useScroll();
+    return (
+        <section className={styles.section}>
+            <div className={styles.header}>
+                <h2 className={styles.title}>
+                    {data[4].header}
+                </h2>
 
-export default function Stats(): JSX.Element {
-  return (
-    <section className="stats">
-      <div className="stats-container">
+                <div className={styles.arrowcon}>
+                    <button onClick={scrollLeft} className={styles.arrow}><Image
+                        src="/images/arrl.png"
+                        alt="icon"
+                        height={24}
+                        width={24}
+                    /></button>
+                    <button onClick={scrollRight} className={styles.arrow}><Image
+                        src="/images/arrr.png"
 
-        <div className="stat d-flex flex-column align-items-center">
-          <Image src="/images/stat1.png" alt="Countries icon" width={64} height={64} />
-          <h3>195</h3>
-          <p>user countries</p>
-        </div>
-
-        <div className="stat d-flex flex-column align-items-center">
-          <Image src="/images/stat2.png" alt="Teachers icon" width={64} height={64} />
-          <h3>1M</h3>
-          <p>valued teachers</p>
-        </div>  
-
-        <div className="stat d-flex flex-column align-items-center">
-          <Image src="/images/stat3.png" alt="Students icon" width={64} height={64} />
-          <h3>17M</h3>
-          <p>happy students</p>
-        </div>
-
-      </div>
-    </section>
-  );
+                        alt="icon"
+                        height={24}
+                        width={24}
+                    /></button>
+                </div>
+            </div>
+            <div ref={scrollRef} className={styles.cards}>
+                {cards.map((card, index) => (
+                    <Card5
+                        key={index}
+                        para={card.para}
+                        image={card.Image}
+                        name={card.name}
+                        job={card.job}
+                    />
+                ))}
+            </div>
+        </section>
+    );
 }

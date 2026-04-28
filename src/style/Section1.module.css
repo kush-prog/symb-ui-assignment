@@ -1,0 +1,185 @@
+.heroSection {
+    font-family: 'Roboto';
+    padding: 80px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.topContentContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.highlightedTextContainer {
+    position: relative;
+    z-index: 10;
+}
+
+.mainHeading {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: clamp(24px, 6vw, 56px);
+    line-height: 110%;
+    color: #0f172a;
+    text-align: center;
+}
+
+.subheadingText {
+    font-weight: 400;
+    font-size: clamp(16px, 4vw, 20px);
+    line-height: 160%;
+    color: #0F172A;
+    text-align: center;
+    z-index: 10;
+}
+
+.textUnderlineContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.underlineImage {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.backgroundShapesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.leftBackgroundShape {
+    position: absolute;
+    z-index: 0;
+    left: -2%;
+    width: 35%;
+    height: auto;
+
+}
+
+.rightBackgroundShape {
+    position: absolute;
+    z-index: 0;
+    left: 76%;
+    top: -300px;
+    width: 30%;
+    height: auto;
+}
+
+.heroImagesContainer {
+    display: inline-block;
+    position: relative;
+}
+
+.desktopMockupImage {
+    border-radius: 20px;
+    width: 1200px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+.mobileMockupImage{
+    display: none;
+}
+
+.appIconsRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.appIconsRow .appIcon {
+    width: 64px;
+    height: 64px;
+}
+
+.decorativeLines {
+    position: relative;
+    top: -30px;
+    left: 185px;
+    height: 50px;
+}
+
+@media (max-width: 763px) {
+    .heroSection {
+        background-color: white;
+        padding: 48px 16px;
+        gap: 5px;
+    }
+
+    .mainHeading {
+        text-align: left;
+    }
+
+    .underlineImage {
+        position: absolute;
+        bottom: -3px;
+        height: 15px;
+    }
+
+    .subheadingText {
+        text-align: left;
+    }
+
+    .desktopMockupImage{
+        display: none;
+    }
+    .mobileMockupImage {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .leftBackgroundShape {
+        left: -60px;
+        top: 20px;
+        width: 157px;
+        height: 206px;
+
+    }
+
+    .rightBackgroundShape {
+        left: 65%;
+        top: -130px;
+        width: 50%;
+        height: 371px;
+    }
+
+    .decorativeLines {
+        position: relative;
+        top: -30px;
+        left: 5px;
+        height: 50px;
+    }
+    .heroImagesContainer{
+        display: block;
+    }
+
+    .appIconsRow {
+        gap: 24px;
+        overflow: visible;
+        left: 0px;
+        top: 74%;
+    }
+
+    .appIconsRow .appIcon {
+        width: 64px;
+    }
+}
