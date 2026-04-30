@@ -1,4 +1,4 @@
-import styles from "./testimonialCard.module.css"
+import styles from "@/styles/testimonialCard.module.css"
 import Image from "next/image";
 
 type CardProps = {

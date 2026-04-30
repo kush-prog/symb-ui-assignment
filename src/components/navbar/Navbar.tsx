@@ -1,6 +1,6 @@
 import { Menu } from "lucide-react";
 import Image from "next/image";
-import styles from "./navbar.module.css"
+import styles from "@/styles/navbar.module.css"
 import "@/app/globals.css"
 
 export default function Navbar() {

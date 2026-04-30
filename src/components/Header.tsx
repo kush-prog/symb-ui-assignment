@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/style/Header.module.css"
+import styles from "@/styles/Header.module.css"
 import "@/app/globals.css"
 import data from "@/app/data/headers.json"
 export default function Header() {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/style//Section7.module.css";
+import styles from "@/styles//Section7.module.css";
 import data from "@/app/data/headers.json"
 
 export default function Section8() {

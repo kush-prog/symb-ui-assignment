@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/style/Section6.module.css"
+import styles from "@/styles/Section6.module.css"
 import "@/app/globals.css"
 import Card from "@/components/cards/FeatureCard"
 import cards from "@/app/data/cards.json"

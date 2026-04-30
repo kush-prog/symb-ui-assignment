@@ -8,7 +8,7 @@ import Section6 from "@/components/testimonials/testimonials";
 import Section7 from "@/components/cta/Cta";
 import Footer from "@/components/features/Footer";
 import Navbar from "@/components/navbar/Navbar";
-import styles from "@/app/pages.module.css"
+import styles from "@/styles/pages.module.css"
 
 export default function Home() {
   return (

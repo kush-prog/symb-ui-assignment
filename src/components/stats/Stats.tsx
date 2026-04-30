@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import "@/app/globals.css"
-import styles from "@/style/Section5.module.css"
+import styles from "@/styles/Section5.module.css"
 import cards from "@/app/data/cards5.json"
 import Card5 from "@/components/cards/TestimonialCard"
 import data from "@/app/data/headers.json"

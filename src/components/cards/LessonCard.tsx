@@ -1,4 +1,4 @@
-import styles from "./lessonCard.module.css"
+import styles from "@/styles/lessonCard.module.css"
 
 type CardProps = {
   type: string;

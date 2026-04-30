@@ -1,6 +1,6 @@
 import Image from "next/image";
 import data from "@/app/data/footer.json";
-import styles from "@/style/footer.module.css"
+import styles from "@/styles/footer.module.css"
 export default function Footer() {
     return (
         <footer className={styles.footer}>

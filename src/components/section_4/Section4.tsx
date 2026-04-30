@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "@/app/globals.css"
-import styles from "@/style/Section4.module.css"
+import styles from "@/styles/Section4.module.css"
 
 export default function Section5() {
     return (
