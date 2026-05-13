@@ -81,6 +81,8 @@
     display: block;
     position: relative;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .desktopMockupImage {
@@ -161,7 +163,7 @@
         left: 65%;
         top: -130px;
         width: 50%;
-        height: 371px;
+        height: auto;
     }
 
     .decorativeLines {

@@ -40,7 +40,8 @@
     line-height: 160%;
     color: #0F172A;
 }
-.features{
+
+.features {
     position: relative;
     z-index: 10;
 }
@@ -62,10 +63,12 @@
     width: clamp(90px, 18vw, 210px);
     z-index: 0;
 }
+
 .rcontainer {
     width: 100%;
     max-width: 600px;
 }
+
 .image {
     position: relative;
     width: 140%;
@@ -94,7 +97,8 @@
     top: 5%;
     left: 0%;
 }
-.line{
+
+.line {
     position: relative;
     display: inline-block;
 }
@@ -108,7 +112,7 @@
     left: 45%;
 }
 
-.avatar {  
+.avatar {
     display: none;
 }
 
@@ -135,7 +139,7 @@
 }
 
 @media (min-width: 768px) {
-        .Header {
+    .Header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -150,10 +154,11 @@
         flex: 1;
         max-width: 580px;
     }
+
     .vector {
         position: absolute;
         left: 30px;
-    
+
     }
 }
 

@@ -43,8 +43,8 @@ export default function Section2() {
                     <Image
                         src="/images/screen.png"
                         alt="scren"
-                        width={561}
-                        height={652}
+                        width={1200}
+                        height={700}
                         className={styles.desktopMockupImage}
                     />
                     <Image

@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: auto;
+  min-height: 600px;
   gap: 32px;
   padding: 256px 30px;
   border-bottom: 1px solid #E2E8F0;
@@ -9,11 +10,13 @@
 }
 
 .desktopBg {
+  object-fit: cover;
   display: none;
 }
 
 .mobileBg {
   display: block;
+  object-fit: cover;
 }
 
 .content {
@@ -66,7 +69,6 @@
 
   .desktopBg {
     display: block;
-    width: 1440px;
   }
 
   .mobileBg {
