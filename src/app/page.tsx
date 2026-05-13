@@ -6,7 +6,7 @@ import Stats from "@/components/section_4/Section4";
 import Testimonials from "@/components/stats/Stats";
 import Features from "@/components/testimonials/testimonials";
 import Cta from "@/components/cta/Cta";
-import Footer from "@/components/features/Footer";
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import styles from "@/styles/pages.module.css"
 

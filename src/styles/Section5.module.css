@@ -48,7 +48,7 @@
     background-color: white;
     height: 330px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-shrink: 0;
     overflow-x: auto;
     overflow-y: hidden;

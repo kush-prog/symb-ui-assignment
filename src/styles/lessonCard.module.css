@@ -2,25 +2,29 @@
     border-radius: 10px;
     padding-top: 24px;
     width: 200px;
-    height: fit-content;
+    height: auto;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     background: #fff;
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.Featured{
+
+.Featured {
     background-color: #F3E8FF;
     color: #6B21A8;
 }
-.Popular{
+
+.Popular {
     background-color: #DBEAFE;
     color: #1E40AF;
 }
-.New{
+
+.New {
     color: #166534;
     background-color: #DCFCE7;
 }
+
 .type {
     font-weight: 400;
     font-size: 14px;
@@ -31,10 +35,12 @@
     top: 16px;
     left: 16px;
 }
-.con{
+
+.con {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex-grow: 1;
 }
 
 .title {
@@ -56,7 +62,7 @@
     padding-right: 16px;
 }
 
-.bcon{
+.bcon {
     padding: 16px;
 }
 
@@ -77,20 +83,23 @@
 
 @media (max-width: 1080px) {
     .container {
-    width: 160px;
-}
+        width: 160px;
+    }
+
     .title {
-    font-size: 16px;
-    line-height: 110%;
-}
-.para{
-    font-size: 12px;
-}
-.button {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    
-}
+        font-size: 16px;
+        line-height: 110%;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+    .button {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
 }

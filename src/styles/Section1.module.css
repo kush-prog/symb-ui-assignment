@@ -1,6 +1,6 @@
 .heroSection {
     font-family: 'Roboto';
-    padding: 80px;
+    padding: 80px clamp(20px, 5vw, 80px);
     max-width: 100%;
     height: auto;
     display: flex;
@@ -78,13 +78,14 @@
 }
 
 .heroImagesContainer {
-    display: inline-block;
+    display: block;
     position: relative;
+    width: 100%;
 }
 
 .desktopMockupImage {
     border-radius: 20px;
-    width: 1200px;
+    width: 100%;
     height: auto;
     position: relative;
     z-index: 10;
@@ -103,6 +104,7 @@
     bottom: -30px;
     overflow: hidden;
     width: 100%;
+    flex-wrap: nowrap;
 }
 
 .appIconsRow .appIcon {
@@ -112,9 +114,9 @@
 
 .decorativeLines {
     position: relative;
-    top: -30px;
-    left: 185px;
-    height: 50px;
+    top: -40px;
+    left: 70px;
+    height: 60px;
 }
 
 @media (max-width: 763px) {
@@ -174,12 +176,38 @@
 
     .appIconsRow {
         gap: 24px;
-        overflow: visible;
+        overflow-x: auto;
+        overflow-y: hidden;
         left: 0px;
         top: 74%;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 8px;
+    }
+
+    .appIconsRow::-webkit-scrollbar {
+        display: none;
     }
 
     .appIconsRow .appIcon {
         width: 64px;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 764px) and (max-width: 1080px) {
+    .appIconsRow {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .appIconsRow::-webkit-scrollbar {
+        display: none;
+    }
+
+    .appIconsRow .appIcon {
+        flex-shrink: 0;
     }
 }

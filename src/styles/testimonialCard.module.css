@@ -31,6 +31,7 @@
     font-size: 18px;
     line-height: 160%;
     color: #000;
+    flex-grow: 1;
 }
 
 .name {
@@ -50,7 +51,7 @@
 @media (min-width: 768px) {
     .container {
         width: 422px;
-        height: 305px;
+        height: auto;
         padding: 32px;
         background: white;
         gap: 32px;

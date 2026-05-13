@@ -14,12 +14,12 @@ export default function Section2() {
                             <Image
                                 src="/images/vector14.png"
                                 alt="underline"
-                                width={140}
+                                width={200}
                                 height={20}
                                 className={styles.underlineImage}
                             />
                         </span>
-                        {data[1].header[2]}
+                        {data[1].header[2]} 
                     </h1>
                     <p className={styles.subheadingText}>{data[1]?.para?.[0]} <br /> {data[1]?.para?.[1]}</p>
                 </div>
