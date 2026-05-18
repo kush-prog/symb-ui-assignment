@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "@/styles//Section7.module.css";
 import data from "@/app/data/headers.json"
 
-export default function Section8() {
+export default function Cta() {
     return (
         <section className={styles.section}>
             <Image

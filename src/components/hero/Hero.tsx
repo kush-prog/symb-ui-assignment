@@ -1,79 +1,69 @@
 import Image from "next/image";
-import styles from "@/styles/Section1.module.css"
+import styles from "@/styles/hero.module.css"
 import "@/app/globals.css"
 import data from "@/app/data/headers.json"
-export default function Section2() {
-    return (
-        <section className="bg-[#F1F5F9] overflow-hidden">
-            <div className={styles.heroSection}>
-                <div className={styles.topContentContainer}>
-                    <h1 className={styles.mainHeading}>
-                        <span>{data[1].header[0]}{" "}</span>
-                        <span className={styles.textUnderlineContainer}>
-                            <span className={styles.highlightedTextContainer}>{data[1].header[1]}</span>
-                            <Image
-                                src="/images/vector14.png"
-                                alt="underline"
-                                width={200}
-                                height={20}
-                                className={styles.underlineImage}
-                            />
-                        </span>
-                        {data[1].header[2]} 
-                    </h1>
-                    <p className={styles.subheadingText}>{data[1]?.para?.[0]} <br /> {data[1]?.para?.[1]}</p>
-                </div>
-                <div className={styles.backgroundShapesContainer}>
-                    <Image
-                        src="/images/Blobl.png"
-                        alt="left blob"
-                        width={561}
-                        height={652}
-                        className={styles.leftBackgroundShape}
-                    />
-                    <Image
-                        src="/images/Blobr.png"
-                        alt="right blob"
-                        width={561}
-                        height={652}
-                        className={styles.rightBackgroundShape}
-                    />
-                </div>
-                <div className={styles.heroImagesContainer}>
-                    <Image
-                        src="/images/screen.png"
-                        alt="scren"
-                        width={1200}
-                        height={700}
-                        className={styles.desktopMockupImage}
-                    />
-                    <Image
-                        src="/images/screenmb.png"
-                        alt="scren"
-                        width={561}
-                        height={652}
-                        className={styles.mobileMockupImage}
-                    />
-                    <Image
-                        src="/images/Lines.png"
-                        alt="lines"
-                        width={1040}
-                        height={50}
-                        className={styles.decorativeLines}
-                    />
-                    <div className={styles.appIconsRow}>
-                        <Image  className={styles.appIcon} src="/icons/app1.png" alt="" width={64} height={64} />
-                        <Image className={styles.appIcon} src="/icons/app2.png" alt="" width={64} height={64} />
-                        <Image className={styles.appIcon} src="/icons/app3.png" alt="" width={64} height={64} />
-                        <Image className={styles.appIcon} src="/icons/app4.png" alt="" width={64} height={64} />
-                        <Image className={styles.appIcon} src="/icons/app5.png" alt="" width={64} height={64} />
-                        <Image className={styles.appIcon} src="/icons/app6.png" alt="" width={64} height={64} />
-                        <Image className={styles.appIcon} src="/icons/app7.png" alt="" width={64} height={64} />
-                        <Image className={styles.appIcon} src="/icons/app8.png" alt="" width={64} height={64} />
-                        <Image className={styles.appIcon} src="/icons/app9.png" alt="" width={64} height={64} />
-                    </div>
-                </div>
+export default function Hero() {
+  return (
+    <section className={styles.sectionHeader}>
+      <div className={styles.Header}>
+        <div className={styles.lcontainer}>
+          <div className={styles.text}>
+            <h1 className={styles.title}>
+              <span className={styles.line}>
+                <span className={styles.head}>
+                  {data[0].header[0]}
+                </span>
+                <Image
+                  src="/images/vector14.png"
+                  alt="underline"
+                  width={190.5}
+                  height={12.4}
+                  className={styles.vector}
+                />
+              </span>
+              {data[0].header[1]}
+            </h1>
+            <p className={styles.para}>{data[0].para}</p>
+            <div className={styles.buttons}>
+              <button className={styles.signup}>Sign Up Now</button>
+              <button className={styles.demo}>
+                <Image
+                  src="/icons/demo.png"
+                  alt="icon"
+                  height={24}
+                  width={24}
+                />
+                View Demo</button>
             </div>
-        </section>
-    );
+          </div>
+          <div className={styles.trust}>
+            <p>
+              Trusted by <span className={styles.company}>leading companies</span>
+            </p>
+            <div className={styles.icon}>
+              <Image src="/icons/col1.png" alt="" width={32} height={28} style={{ width: "30px", height: "32px" }}/>
+              <Image src="/icons/col2.png" alt="" width={32} height={28} />
+              <Image src="/icons/col3.png" alt="" width={32} height={28} />
+              <Image src="/icons/col4.png" alt="" width={32} height={28} />
+              <Image src="/icons/col5.png" alt="" width={32} height={28} />
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.rcontainer}>
+          <div className={styles.image}>
+            <Image
+              src="/images/group50.png"
+              alt="loding"
+              width={624}
+              height={544}
+              className={styles.image}
+            />
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  );
 }

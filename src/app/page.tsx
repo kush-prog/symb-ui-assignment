@@ -1,10 +1,10 @@
-import Header from "@/components/Header";
 import Hero from "@/components/hero/Hero";
 import Tools from "@/components/tools/Tools";
-import Community from "@/components/section_3/Section3";
-import Stats from "@/components/section_4/Section4";
-import Testimonials from "@/components/stats/Stats";
-import Features from "@/components/testimonials/testimonials";
+import Section3 from "@/components/section_3/Section3";
+import Section4 from "@/components/section_4/Section4";
+import Stat from "@/components/stats/Stat";
+import Testimonial from "@/components/testimonials/Testimonial";
+import Features from "@/components/features/Features";
 import Cta from "@/components/cta/Cta";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
@@ -15,12 +15,12 @@ export default function Home() {
     <main>
       <div className={styles.page}>
         <Navbar />
-        <Header />
         <Hero />
         <Tools />
-        <Community />
-        <Stats />
-        <Testimonials />
+        <Section3 />
+        <Section4 />
+        <Stat />
+        <Testimonial />
         <Features />
         <Cta />
         <Footer />

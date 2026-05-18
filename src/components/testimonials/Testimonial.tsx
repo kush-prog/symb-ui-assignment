@@ -6,7 +6,7 @@ import cards from "@/app/data/cards5.json"
 import Card5 from "@/components/cards/TestimonialCard"
 import data from "@/app/data/headers.json"
 import { useScroll } from "@/hooks/useScroll";
-export default function Section5() {
+export default function Testimonial() {
     const { scrollRef, scrollLeft, scrollRight } = useScroll();
     return (
         <section className={styles.section}>

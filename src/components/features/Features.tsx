@@ -4,7 +4,7 @@ import "@/app/globals.css"
 import Card from "@/components/cards/FeatureCard"
 import cards from "@/app/data/cards.json"
 import data from "@/app/data/headers.json"
-export default function Section6() {
+export default function Features() {
     return (
         <section className={styles.sectionHeader}>
             <div className={styles.Header}>

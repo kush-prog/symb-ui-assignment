@@ -1,31 +1,43 @@
 import Image from "next/image";
+import styles from "@/styles/Section3.module.css"
 import "@/app/globals.css"
-import styles from "@/styles/Section4.module.css"
-
-export default function Section5() {
+import data from "@/app/data/headers.json"
+export default function Section4() {
     return (
-        <section className={styles.section}>
-            <div className={styles.border}>
-                <div className={styles.container}>
-
-                    <div className={styles.card}>
-                        <Image src="/icons/Icon1.png" alt="" width={64} height={64} />
-                        <h3 className={styles.number}>195</h3>
-                        <p className={styles.label}>user countries</p>
+        <section>
+            <div className={styles.Header}>
+                <div className={styles.lcontainer}>
+                    <div className={styles.text}>
+                        <h1 className={styles.title}>
+                            <span className={styles.line}>
+                                <span>
+                                    {data[3].header[0]}
+                                </span>
+                                <Image
+                                    src="/icons/Aero.png"
+                                    alt="underline"
+                                    width={64}
+                                    height={64}
+                                    className={styles.aero}
+                                />
+                            </span>
+                            {" "}{data[3].header[1]}
+                        </h1>
+                        <p className={styles.para}>{data[3].para}</p>
+                        <span className={styles.link}><a href=""></a>{data[3].link}</span>
                     </div>
+                </div>
 
-                    <div className={styles.card}>
-                        <Image src="/icons/Icon2.png" alt="" width={64} height={64} />
-                        <h3 className={styles.number}>1M</h3>
-                        <p className={styles.label}>valued teachers</p>
+                <div className={styles.rcontainer}>
+                    <div className={styles.image}>
+                        <Image
+                            src="/images/Col.png"
+                            alt="loding"
+                            width={624}
+                            height={544}
+                            className={styles.image}
+                        />
                     </div>
-
-                    <div className={styles.card}>
-                        <Image src="/icons/Icon3.png" alt="" width={64} height={64} />
-                        <h3 className={styles.number}>17M</h3>
-                        <p className={styles.label}>happy students</p>
-                    </div>
-
                 </div>
             </div>
         </section>
