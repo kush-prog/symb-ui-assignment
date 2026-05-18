@@ -9,7 +9,7 @@ type CardProps = {
 };
 export default function Card({para, image, name, job}: CardProps) {
     return (
-        <div className={styles.container}>
+        <div data-testimonial-card className={styles.container}>
             <div className={styles.para}>
                 {para}
             </div>
