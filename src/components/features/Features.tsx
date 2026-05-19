@@ -1,8 +1,6 @@
 import Image from "next/image";
 import styles from "@/styles/Section6.module.css"
 import "@/app/globals.css"
-import Card from "@/components/cards/FeatureCard"
-import cards from "@/app/data/cards.json"
 import data from "@/app/data/headers.json"
 export default function Features() {
     return (
@@ -29,51 +27,13 @@ export default function Features() {
                     <span className={styles.link}><a href=""></a>{data[5].link}</span>
                 </div>
                 <div className={styles.rcontainer}>
-                    <div className={styles.image}>
-                        <Image
-                            src="/images/Blob4.png"
-                            alt="blob"
-                            width={624}
-                            height={544}
-                            className={styles.blob4}
-                        />
-                        <Image
-                            src="/images/Picture1.png"
-                            alt=""
-                            width={226}
-                            height={238}
-                            className={styles.pic1}
-                        />
-                        <Image
-                            src="/images/Picture2.png"
-                            alt=""
-                            width={360}
-                            height={160}
-                            className={styles.pic2}
-                        />
-
-                        <Image
-                            src="/images/Picture3.png"
-                            alt=""
-                            width={290}
-                            height={160}
-                            className={styles.pic3}
-                        />
-                        <Image
-                            src="/images/Avatar.png"
-                            alt=""
-                            width={120}
-                            height={120}
-                            className={styles.avatar}
-                        />
-                        <div className={styles.cards}>
-                            <Card
-                                type={cards[1].type}
-                                title={cards[1].title}
-                                description={cards[1].description}
-                            />
-                        </div>
-                    </div>
+                    <Image
+                        src="/images/Right.svg"
+                        alt="Features visual with cards and images"
+                        width={624}
+                        height={544}
+                        className={styles.rightImage}
+                    />
                 </div>
             </div>
 
