@@ -68,21 +68,21 @@
     display: inline-block;
 }
 
-/* ── Right container ── */
 .rcontainer {
-    width: 100%;
-    max-width: 600px;
+    width: calc(100% + 40px);
+    max-width: none;
     overflow: hidden;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
-/* Single SVG image — scales with container, clips on right for mobile */
 .rightImage {
-    width: 130%;
+    width: 140%;
     height: auto;
     display: block;
+    margin-left: 0;
 }
 
-/* ── Tablet (768px+) ── */
 @media (min-width: 768px) {
     .Header {
         flex-direction: row;
@@ -97,12 +97,15 @@
 
     .rcontainer {
         flex: 1;
-        max-width: 540px;
+        max-width: 620px;
         overflow: visible;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
     }
 
     .rightImage {
-        width: 120%;
+        width: 140%;
     }
 
     .vector {
@@ -111,7 +114,6 @@
     }
 }
 
-/* ── Desktop (1203px+) ── */
 @media (min-width: 1203px) {
     .lcontainer {
         gap: 32px;
@@ -125,7 +127,11 @@
         width: 210px;
     }
 
+    .rcontainer {
+        max-width: 680px;
+    }
+
     .rightImage {
-        width: 110%;
+        width: 130%;
     }
 }
